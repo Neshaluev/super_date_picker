@@ -1,0 +1,24 @@
+.wrapper_auto_refresh {
+  display: flex;
+  gap: 8px;
+
+  .auto_refresh_switcher {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    span {
+      margin-left: 8px;
+      display: flex;
+      font-size: 12px;
+      font-size: 0.85714rem;
+      line-height: 1.14286rem;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      white-space: nowrap;
+      color: #1a1c21;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 150ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+    }
+  }
+}

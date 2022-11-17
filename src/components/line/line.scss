@@ -1,0 +1,15 @@
+.line {
+  height: 1px;
+  background-color: $inputColorBorder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &.s {
+    height: 0.8px;
+  }
+  &.m {
+    height: 2px;
+  }
+  &.l {
+    height: 3px;
+  }
+}

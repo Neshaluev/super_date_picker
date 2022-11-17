@@ -1,0 +1,15 @@
+.recently_used_date_content {
+  max-height: 200px;
+  overflow-y: scroll;
+  span {
+    word-break: break-word;
+    color: #1a1c21;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .recently_used_date_conent {
+    ul {
+      list-style: none;
+    }
+  }
+}

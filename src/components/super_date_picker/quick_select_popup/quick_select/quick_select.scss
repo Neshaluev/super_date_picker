@@ -1,0 +1,33 @@
+.wrapper_quick_select {
+  .quick_select_header {
+    display: flex;
+    justify-content: space-between;
+    span {
+      word-break: break-word;
+      color: #1a1c21;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    div {
+      display: flex;
+      span {
+        button {
+          display: flex;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          background-color: $white;
+          &:hover {
+            background-color: rgba(0, 119, 204, 0.1);
+          }
+          svg {
+            height: 24px;
+            height: 24px;
+            fill: $accentColor;
+          }
+        }
+      }
+    }
+  }
+}

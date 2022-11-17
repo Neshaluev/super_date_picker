@@ -1,0 +1,16 @@
+.layout_delimited {
+  overflow: hidden;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: #fbfcfd;
+  border-top: 2px solid $inputColorBorder;
+  border-bottom: 2px solid $inputColorBorder;
+  span {
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

@@ -1,0 +1,9 @@
+.wrapper_tabs {
+  display: flex;
+  width: 100%;
+  background-color: $white;
+  border-radius: 6px;
+  &.column {
+    flex-direction: column;
+  }
+}

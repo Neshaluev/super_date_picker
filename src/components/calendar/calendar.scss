@@ -1,0 +1,12 @@
+.wrapper-calendar {
+  background-color: $white;
+  .calendar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .calendar_content {
+      position: relative;
+      width: 282px;
+    }
+  }
+}

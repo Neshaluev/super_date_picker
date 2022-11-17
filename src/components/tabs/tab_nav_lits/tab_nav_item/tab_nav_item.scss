@@ -1,0 +1,31 @@
+.tab_nav__item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  &.active {
+    border-bottom: 2px solid $accentColor;
+    background-color: rgb(241, 248, 254);
+    span {
+      color: $accentColor;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    // font-weight: bold;
+    width: 100%;
+    text-align: center;
+    &:hover {
+      color: $accentColor;
+      text-decoration: underline;
+    }
+  }
+}

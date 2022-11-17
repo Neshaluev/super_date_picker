@@ -1,0 +1,41 @@
+.wrapper_common_used_section {
+  .common_used_section_title {
+    word-break: break-word;
+    color: #1a1c21;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .common_used_section_content {
+    padding: 8px 0 4px;
+    max-height: 132px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(4, 1fr);
+      -webkit-box-align: stretch;
+      align-items: stretch;
+      grid-template-columns: repeat(2, 1fr);
+      li {
+        button {
+          font-weight: bold;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          font-size: 14px;
+          line-height: 14px;
+          margin-bottom: 8px;
+          color: $accentColor;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

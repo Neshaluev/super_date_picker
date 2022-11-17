@@ -1,0 +1,48 @@
+#tooltip {
+  // width: 430px;
+  // width: 430px;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 90%;
+  box-shadow: 0 12px 24px 0 rgb(65 78 101 / 10%), 0 6px 12px 0 rgb(65 78 101 / 10%),
+    0 4px 4px 0 rgb(65 78 101 / 10%), 0 2px 2px 0 rgb(65 78 101 / 10%);
+  left: 0;
+  background: white;
+  color: #222;
+  border-color: #d0d3d9;
+  border-top-color: #d9dce0;
+  border-bottom-color: #aaafba;
+
+  // transition: all 0.1s linear;
+  // animation: opacity-my 1s both linear;
+
+  &.wrapper_black {
+    background: #000;
+    color: white;
+    border-color: #000;
+    border-top-color: #000;
+    border-bottom-color: #000;
+  }
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 16px solid #fff;
+}
+
+.arrow_black {
+  border-right: 16px solid rgb(34, 34, 34) !important;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 16px solid #fff;
+}

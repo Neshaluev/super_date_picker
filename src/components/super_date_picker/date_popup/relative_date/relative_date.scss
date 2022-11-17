@@ -1,0 +1,30 @@
+.relative_date {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .relative_date_select {
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .relative_date_input {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .relative_date_round {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    span {
+      cursor: pointer;
+      font-size: 14px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}

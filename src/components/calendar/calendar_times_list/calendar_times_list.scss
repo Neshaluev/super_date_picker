@@ -1,0 +1,35 @@
+.calendar_times_list {
+  margin: 16px 0;
+  margin-right: 5px;
+  margin-left: 10px;
+  width: 100px;
+  height: 215px;
+  overflow: hidden;
+  overflow-y: scroll;
+  .times_list {
+    list-style: none;
+    &.focused {
+      background: #e6f0f8;
+    }
+    .times_list_item {
+      display: flex;
+      justify-content: center;
+      .time {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 12px;
+        color: #69707d;
+        white-space: nowrap;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+        &.active {
+          background-color: #006bb4;
+          color: white;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.calendar_month_dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: $white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  .calendar_month_dropdown_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 12px;
+    padding: 8px;
+    color: #343741;
+    .calendar_month_dropdown_item_text {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      cursor: pointer;
+      &.active {
+        background: #006bb4;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 4px;
+      }
+      &:hover {
+        background-color: #f5f7fa;
+      }
+    }
+  }
+}
+
+.calendar_nav {
+  .calendar_nav_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    .nav_controller_selected_date {
+      font-size: 20px;
+      .selected-month {
+        font-weight: 500;
+        color: #000;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          color: #006bb4;
+        }
+      }
+      .selected-yearh {
+        padding-left: 5px;
+        font-weight: 300;
+        color: #69707d;
+      }
+    }
+
+    .nav_controller_left,
+    .nav_controller_right {
+      button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+        // padding: 3px;
+        border-radius: 2px;
+        &:hover {
+          transform: scale(1.2);
+          background-color: #f5f7fa;
+          // background-color: #fcf;
+        }
+        svg {
+          margin-top: 5px;
+          fill: #69707d;
+        }
+      }
+    }
+    .nav_controller_left {
+      margin-left: 10px;
+    }
+    .nav_controller_right {
+      margin-right: 10px;
+    }
+  }
+  .calendar_weekdays {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0 2px;
+    color: #69707d;
+    text-transform: uppercase;
+  }
+}
